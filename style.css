@@ -29,6 +29,15 @@ header {
     width: 90%;
 }
 
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+ }
+
 #logo {
     height: 50px;
 }
@@ -36,6 +45,9 @@ header {
 div.main {
     display: flex;
     flex-direction: row;
+    width: 90%;
+    height: 90%;
+    align-self: center;
 }
 
 .main article {
@@ -68,6 +80,13 @@ div.main {
 
 body {
     background-color: black;
+}
+
+div.footer {
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
 }
 
 article {
