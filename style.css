@@ -19,6 +19,13 @@ html {
     min-height: 100%;
 }
 
+.main p::selection {
+    background: aqua; /* WebKit/Blink Browsers */
+}
+.main p::-moz-selection {
+    background: aqua; /* Gecko Browsers */
+}
+
 div.main a {
     color: teal;
     text-decoration-line: none;
