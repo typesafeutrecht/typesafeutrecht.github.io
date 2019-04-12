@@ -1,41 +1,67 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
 html {
     font-family: sans-serif;
     font-size: 14pt;
 }
 
+
 .wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
+}
+
+div.main a {
+    color: teal;
+    text-decoration-line: none;
+    border-bottom: 2px dotted teal;
+}
+
+div.main a:hover {
+    background-color: aqua;
 }
 
 .mobileActions {
-    display: flex;
-    margin-left: auto;
-}  
-
-.mobileActions a {
-    font-size: 20pt;
-    color: white;
-    padding-left: 25px;
-    padding-top: 3%;
+    display: none;
 }
 
+/*@media (min-width: 750px) {*/
+    .mobileActions {
+        display: flex;
+        margin-left: auto;
+        flex-wrap: wrap;
+    }
+
+    .mobileActions a {
+        font-size: 18pt;
+        color: white;
+        padding-left: 25px;
+        padding-top: 3%;
+    }
+/*}*/
+
 header {
-    padding: 20px 16px;
+    padding: 1% 6%;
     background: black;
     color: #f1f1f1;
     display: flex;
-    width: 90%;
 }
 
-footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background:#999;
- }
+/*footer {*/
+/*    position:fixed;*/
+/*    left:0px;*/
+/*    bottom:0px;*/
+/*    height:30px;*/
+/*    width:100%;*/
+/*    background:#999;*/
+/* }*/
 
 #logo {
     height: 60px;
@@ -44,37 +70,47 @@ footer {
 div.main {
     display: flex;
     flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
     width: 90%;
-    height: 90%;
+    min-height: 100%;
+    padding: 10px;
     align-self: center;
+    background-color: white;
 }
 
 .main article {
-    flex: 1;
+    /*flex: 1;*/
     padding-left: 20px;
     padding-right: 20px;
-    flex-direction: column;
+    min-width: 200px;
+    /*flex-direction: column;*/
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2%;
-    line-height: 1.2em;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*padding-top: 2%;*/
+    line-height: 1.3em;
+    flex-grow: 1;
   }
 
-  article.announcements {
-      min-width: 200px;
-      max-width: 500px;
+
+.main article.announcements {
+    width: 30%;
+    max-width: 350px;
+    flex-grow: 3;
+    overflow: hidden;
   }
-  
-  article p {
-      display: block;
-  }
-  
+
   article p.pinned {
-      padding-left: 15px;
+      padding: 15px;
       background-color: bisque;
-      line-height: 30px;
+      line-height: 1.5em;
   }
+
+.main article.manifesto {
+    width: 60%;
+    min-width: 300px;
+}
 
 
 body {
@@ -86,10 +122,4 @@ div.footer {
     padding-top: 30px;
     text-align: center;
     color: white;
-}
-
-article {
-    display: flex;
-    min-width: 10he;
-    background-color: white;
 }
