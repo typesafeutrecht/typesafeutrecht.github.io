@@ -1,29 +1,29 @@
 .mobileActions {
-     display: none;
- }
+  display: none;
+}
 
 /*@media (min-width: 750px) {*/
 .mobileActions {
-    display: flex;
-    margin-left: auto;
-    flex-wrap: wrap;
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .mobileActions a {
-    font-size: 18pt;
-    color: white;
-    padding-left: 25px;
-    padding-top: 3%;
+  font-size: 18pt;
+  color: white;
+  padding-left: 25px;
+  padding-top: 3%;
 }
 /*}*/
 
 header {
-    padding: 1% 6%;
-    background: black;
-    color: #f1f1f1;
-    display: flex;
+  padding: 1% 6%;
+  background: black;
+  color: #f1f1f1;
+  display: flex;
 }
 
 #logo {
-    height: 60px;
+  height: 60px;
 }
