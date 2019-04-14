@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 14pt;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}

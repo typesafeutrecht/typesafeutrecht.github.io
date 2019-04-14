@@ -1,0 +1,61 @@
+.main p::selection {
+    background: aqua; /* WebKit/Blink Browsers */
+}
+.main p::-moz-selection {
+    background: aqua; /* Gecko Browsers */
+}
+
+div.main a {
+    color: teal;
+    text-decoration-line: none;
+    border-bottom: 2px dotted teal;
+}
+
+div.main a:hover {
+    background-color: aqua;
+}
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 100%;
+    padding: 10px;
+    align-self: center;
+    background-color: white;
+}
+
+.main article {
+    /*flex: 1;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 200px;
+    /*flex-direction: column;*/
+    width: 90%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*padding-top: 2%;*/
+    line-height: 1.3em;
+    flex-grow: 1;
+}
+
+
+.main article.announcements {
+    width: 30%;
+    max-width: 350px;
+    flex-grow: 3;
+    overflow: hidden;
+}
+
+article p.pinned {
+    padding: 15px;
+    background-color: bisque;
+    line-height: 1.5em;
+}
+
+.main article.manifesto {
+    width: 60%;
+    min-width: 300px;
+}
