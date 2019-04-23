@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./Main.css";
 import Sponsors from "./Sponsors/Sponsors";
+import Meetups from "./Meetups/Meetups";
 
 export default () => (
   <div className="main">
-    <article className="announcements">
+    <Meetups />
+    <div className="announcements article">
       <p className="pinned">
         <b>LOCATION WANTED</b> <br /> if your company is in Utrecht and we can
         have a meetup there, drop me a mail:{" "}
@@ -21,8 +23,8 @@ export default () => (
         </a>
         ! This could be a great start of your speaking career.
       </p>
-    </article>
-    <article className="manifesto">
+    </div>
+    <div className="manifesto article">
       <p>
         We are <a href="/">Typesafe Utrecht</a>, a meetup group, which welcomes
         everyone, who has an opinion on strong typing in programming languages.
@@ -69,7 +71,7 @@ export default () => (
         programming in typesafe languages, because it not only greatly improves
         development experience quality of our programs...
       </p>
-    </article>
+    </div>
 
     <Sponsors />
   </div>
