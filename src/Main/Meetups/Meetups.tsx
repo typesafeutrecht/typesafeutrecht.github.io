@@ -14,8 +14,11 @@ const Meetup = (props: {event: MeetupEvent}) => {
     return (<div className={classNames} key={event.event_url}>
         <div className="title">{event.name}</div>
         <div className="location">📍 {event.venue.name}</div>
-        <div className="going">{event.yes_rsvp_count} type ninjas {goWord} { timestampString }</div>
-        { !isPast && <a href={event.event_url}>🗓 Join in {timestampString}</a>}
+        { isPast ?
+            <div className="going">{event.yes_rsvp_count} type ninjas {goWord} { timestampString }</div>
+            :
+            <a href={event.event_url}>🗓 Join {event.yes_rsvp_count} type ninjas { timestampString }</a>
+        }
     </div>);
 };
 
