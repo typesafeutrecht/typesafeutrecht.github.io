@@ -16,7 +16,7 @@ div.sponsors {
     display: flex;
 }
 
-div.sponsors > img {
+div.sponsors img {
     /*position: relative;*/
     /*top: 50%;*/
     /*transform: translateY(-50%);*/
