@@ -22,8 +22,6 @@
     "prettier": "prettier --write src/**/*.{ts,tsx,css,json} *.json",
     "predeploy": "yarn build",
     "deploy": "echo \"typesafeutrecht.net\" > build/CNAME && gh-pages -d build -b master"
-
-
   },
   "eslintConfig": {
     "extends": "react-app"
